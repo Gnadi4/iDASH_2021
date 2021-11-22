@@ -4,7 +4,7 @@
 
 ## Introduction(Challenge)
 
-This document is the solution of team Data Science Dept. in SeoulTech for the track 2 of idash-2021 competition. It contains a detailed explanation on the method and its implementation results.
+This description is the solution code of team Data Science Dept. in SeoulTech for the track 2 of idash-2021 competition. 
 
 ## Code description
 
