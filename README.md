@@ -4,8 +4,6 @@
 
 iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/competition-tasks.html](http://www.humangenomeprivacy.org/2021/competition-tasks.html)
 
-데이터 다운로드 URL : [http://www.humangenomeprivacy.org/2021/competition-tasks.html](http://www.humangenomeprivacy.org/2021/competition-tasks.html)
-
 -일정
 
 ![image](https://user-images.githubusercontent.com/29485153/143249218-c8ec8614-2d8f-4872-a7da-9c8826f4848d.png)
