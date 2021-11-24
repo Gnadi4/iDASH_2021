@@ -42,6 +42,8 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 
 ### D**ocker hub link**
 
+아래의 도커 허브 내에 README 파일을 통해 도커 실행 방법을 알 수 있습니다
+
 모델에 대한 도커 : [https://hub.docker.com/repository/docker/gnadi4/model](https://hub.docker.com/repository/docker/gnadi4/model) 
 
 전처리기에 대한 도커 : [https://hub.docker.com/repository/docker/gnadi4/preprocessing](https://hub.docker.com/repository/docker/gnadi4/preprocessing)
