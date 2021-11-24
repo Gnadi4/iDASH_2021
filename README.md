@@ -6,8 +6,7 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 
 ### 챌린지 일정
 
-![image](https://user-images.githubusercontent.com/29485153/143258301-762a100e-7107-49da-bee4-84d02319fb73.png)
-<p align="center"><img src="image_src"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29485153/143258301-762a100e-7107-49da-bee4-84d02319fb73.png" height="300px" width="500px"></p>
 
 ### Introduction
 
@@ -30,7 +29,7 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
     - FASTA 포맷은 염기서열 혹은 단백질서열을 문자열로 표현한 것
 - 각 바이러스 게놈의 형태는 아래와 같습니다
 
-<p align="center"><img src="https://user-images.githubusercontent.com/29485153/143258322-c1a0bb1f-a495-4919-842d-3c72a51edaf7.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29485153/143258322-c1a0bb1f-a495-4919-842d-3c72a51edaf7.png" height="150px" width="230px"></p>
 
 ### Encryption Requirement
 
