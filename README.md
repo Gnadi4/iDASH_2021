@@ -148,8 +148,7 @@ The 1000 ciphertexts generated in section 2.4.2 are processed in this part. Plea
 
 Because each ciphertext contains 2 mis, we make a model coefficient vector using the model vectors as in [Figure 13]. After converting the coefficient vector into a plaintext polynomial, it is multiplied with each input ciphertext.
 
-![image](https://user-images.githubusercontent.com/29485153/143258748-203431cc-cbc7-4dea-8b07-15b28da5bb9b.png)
-<p align="center"><img src="image_src"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/29485153/143258748-203431cc-cbc7-4dea-8b07-15b28da5bb9b.png"></p>
 
 <p align="center"><img src="https://user-images.githubusercontent.com/29485153/143258769-e10a5602-a989-4b2b-bb96-52f07f75577a.png"></p>
 
