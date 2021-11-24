@@ -200,7 +200,7 @@ Considering the difference of the execution environment and the number of sample
 
 <p align="center"><img src="https://user-images.githubusercontent.com/29485153/143258970-abc47943-281e-4250-a4ef-d8d9f88b29bd.png"></p>
 
-**References**
+### **References**
 
 [1] suncrypto/HEAAN git hub page [https://github.com/snucrypto/HEAAN](https://github.com/snucrypto/HEAAN)
 
