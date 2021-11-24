@@ -54,6 +54,8 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 
 ### ***제출 코드의 구현방식 및 동작에 대한 설명은 아래와 같습니다(영문)
 
+Description PDF 파일(아래의 내용과 같음) : https://drive.google.com/file/d/1yYGejCLb12CCzFF0wJh3LIZ3GlQF-wtg/view?usp=sharing
+
 # Homomorphic Encryption-based Secure Viral Strain Classification
 
 ### Team name : Data Science Dept. in SeoulTech
