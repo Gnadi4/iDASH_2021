@@ -60,7 +60,7 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 
 ## Method
 
-  We used the open version of the HEaaN library[1] the implementation of CKKS$[2] scheme, and logistic regression for multi-label classification in this task. Our solution consists of three steps: preprocessing, training, and inference
+  We used the open version of the HEaaN library[1] the implementation of CKKS[2] scheme, and logistic regression for multi-label classification in this task. Our solution consists of three steps: preprocessing, training, and inference
 
 <p align="center"><img src="https://user-images.githubusercontent.com/29485153/143258374-a724e7bd-1153-4ab0-86e0-0942cb3f9ebc.png"></p>
 
