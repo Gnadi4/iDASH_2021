@@ -8,7 +8,7 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 
 -일정
 
-![iDASH%20%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%202604c3cb52fc422c913d6d269f65ee9e/Untitled.png](iDASH%20%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%202604c3cb52fc422c913d6d269f65ee9e/Untitled.png)
+![image](https://user-images.githubusercontent.com/29485153/143249218-c8ec8614-2d8f-4872-a7da-9c8826f4848d.png)
 
 ### Introduction
 
@@ -33,7 +33,7 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 - FASTA 포맷은 염기서열 혹은 단백질서열을 문자열로 표현한 것
 - 각 바이러스 게놈의 첫 줄은 ID (균주 식별자)
 
-![iDASH%20%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%202604c3cb52fc422c913d6d269f65ee9e/2021-05-26_16-20-55.png](iDASH%20%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%202604c3cb52fc422c913d6d269f65ee9e/2021-05-26_16-20-55.png)
+![image](https://user-images.githubusercontent.com/29485153/143249307-f00ed527-af3f-4077-b3f2-9ae5149595a7.png)
 
 ### Encryption Requirement
 
@@ -52,7 +52,7 @@ Team name : Data Science Dept. in SeoulTech
 
   We used the open version of the HEaaN library$^{1}$ the implementation of CKKS$^{2}$ scheme, and logistic regression for multi-label classification in this task. Our solution consists of three steps: preprocessing, training, and inference
 
-![2021-11-24_22-21-02.png](iDASH%20%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%202604c3cb52fc422c913d6d269f65ee9e/2021-11-24_22-21-02.png)
+![2021-11-24_22-42-33](https://user-images.githubusercontent.com/29485153/143249421-2df995f3-05f8-4e02-95cd-c26041ab4d3a.png)
 
 ### **2.1 Notation**
 
@@ -67,11 +67,11 @@ Team name : Data Science Dept. in SeoulTech
   With the candidate subsequences, we conduct a feature selection process to further reduce the number of features to be used for building a classification model. For the feature selection, we use the RFE method implemented in the sklearn library. RFE (abbreviation of "Recursive Feature Elimination") is a process of selecting the predefined number of optimal features by removing the most unnecessary features one by one based on the importance of each feature with a linear model (i.e., logistic regression explained in the subsequent section). In this feature selection process, we consider 40, 60, and 120 as the number of features to be selected.
 
   To find the optimal number of features in terms of predictive performance, randomly selected 70% genomes were used for training, and the remaining 30% genomes were used to measure the performance. We repeated this procedure 100 times for a rigorous comparison. From the experiments, we observed that the selected 120 features through RFE show slightly the better performance.
-
-![2021-11-24_22-33-55.png](iDASH%20%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%202604c3cb52fc422c913d6d269f65ee9e/2021-11-24_22-33-55.png)
+  
+![2021-11-24_22-42-58](https://user-images.githubusercontent.com/29485153/143249490-c9610ff6-aff1-4da3-bb39-07470249637a.png)
 
 The final selected 120 features are listed as follows:
 
-![2021-11-24_22-34-33.png](iDASH%20%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%84%86%E1%85%B5%202604c3cb52fc422c913d6d269f65ee9e/2021-11-24_22-34-33.png)
+![2021-11-24_22-43-20](https://user-images.githubusercontent.com/29485153/143249561-7a738099-128d-4b98-9974-f48d67cd48d0.png)
 
 ### **2.3 Training Logistic-regression Model**
