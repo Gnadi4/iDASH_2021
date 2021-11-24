@@ -1,6 +1,6 @@
 # iDASH_2021 track 2 challenge code
 
-![Untitled](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/Untitled.png)
+![image](https://user-images.githubusercontent.com/29485153/143257581-b26c757b-7914-49e8-8455-8d56600f297a.png)
 
 iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/competition-tasks.html](http://www.humangenomeprivacy.org/2021/competition-tasks.html)
 
