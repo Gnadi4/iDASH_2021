@@ -1,12 +1,12 @@
 # iDASH_2021 track 2 challenge code
 
-https://www.notion.so/gnadi4/iDASH_2021-track-2-challenge-code-62a42ff6d31a411a8bc8213ddb1d28ee#cb2eed57612a403c92684f7f0664fa55
+![image](https://user-images.githubusercontent.com/29485153/143258076-1d0d5225-72ca-40d5-bd59-9ad684f82e82.png)
 
 iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/competition-tasks.html](http://www.humangenomeprivacy.org/2021/competition-tasks.html)
 
 ### 챌린지 일정
 
-![iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/Untitled%201.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/Untitled%201.png)
+![image](https://user-images.githubusercontent.com/29485153/143258301-762a100e-7107-49da-bee4-84d02319fb73.png)
 
 ### Introduction
 
@@ -29,7 +29,7 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
     - FASTA 포맷은 염기서열 혹은 단백질서열을 문자열로 표현한 것
 - 각 바이러스 게놈의 형태는 아래와 같습니다
 
-![iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-05-26_16-20-55.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-05-26_16-20-55.png)
+![image](https://user-images.githubusercontent.com/29485153/143258322-c1a0bb1f-a495-4919-842d-3c72a51edaf7.png)
 
 ### Encryption Requirement
 
@@ -60,11 +60,11 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 
   We used the open version of the HEaaN library$^{1}$ the implementation of CKKS$^{2}$ scheme, and logistic regression for multi-label classification in this task. Our solution consists of three steps: preprocessing, training, and inference
 
-![2021-11-24_22-21-02.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_22-21-02.png)
+![image](https://user-images.githubusercontent.com/29485153/143258374-a724e7bd-1153-4ab0-86e0-0942cb3f9ebc.png)
 
 ## **2.1 Notation**
 
-![2021-11-24_23-04-54.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-04-54.png)
+![image](https://user-images.githubusercontent.com/29485153/143258396-b0bd03a1-20a5-4bbf-b3ef-3602951db46a.png)
 
 ## 2.2 Preprocessing
 
@@ -76,27 +76,26 @@ iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/compe
 
   To find the optimal number of features in terms of predictive performance, randomly selected 70% genomes were used for training, and the remaining 30% genomes were used to measure the performance. We repeated this procedure 100 times for a rigorous comparison. From the experiments, we observed that the selected 120 features through RFE show slightly the better performance.
 
-![2021-11-24_22-33-55.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_22-33-55.png)
-
+![image](https://user-images.githubusercontent.com/29485153/143258424-668bc3eb-f0ed-4997-b7ac-0c50b58e774f.png)
 The final selected 120 features are listed as follows:
 
-![2021-11-24_22-34-33.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_22-34-33.png)
+![image](https://user-images.githubusercontent.com/29485153/143258442-9f12dc24-ee81-41bc-99e9-41c8768b8a84.png)
 
 ## **2.3 Training Logistic-regression Model**
 
   As a classification model, we employ logistic regression. It outputs class probabilities given a vectorized input (i.e., count vector). Given an input x, a logistic regression model produces the logit values with k weight vectors associated with each class as:
-
-![2021-11-24_23-17-44.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-17-44.png)
-
+  
+![image](https://user-images.githubusercontent.com/29485153/143258463-5b98a421-aec8-49c7-a4a8-5bd3750cfa6e.png)
+  
   These continuous logit values are transformed into class probabilities with a softmax function as follows:
 
-![2021-11-24_23-18-03.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-18-03.png)
+![image](https://user-images.githubusercontent.com/29485153/143258504-ffe1611c-9bf4-4fc7-a1c3-d1c5d7971133.png)
 
   The softmax transformation requires a lot of computational costs with encrypted data. To avoid this issue, we assume that the logit value represents class preference since each logit value corresponds to the distance between a decision hyperplane and a data point. We empirically confirmed that using the logit values does not degrade predictive performance.
 
   We evaluated our selected 120 features and a logistic regression model again with different random seeds. In this experiment, the given data were divided into 70% for training and 30% for validation. The results are summarized as Table 2:
 
-![2021-11-24_23-18-40.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-18-40.png)
+![image](https://user-images.githubusercontent.com/29485153/143258529-b9d02442-3cb9-4bbb-9e80-1eb9a3921436.png)
 
 From these results, we confirmed again that our approach consistently shows almost perfect classification performance over different data splits.
 
@@ -110,19 +109,19 @@ Input data is represented as [Figure 3] and the detailed preprocessing steps are
 
 The process of obtaining mi from Xi is the main routine for pre-processing. We denote it as fcount(Xi). The detailed process of fcount(Xi) is given in [Figure 7]. The subroutines used in fcount(Xi) are introduced  in [Figure 6].
 
-![2021-11-24_23-21-41.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-21-41.png)
+![image](https://user-images.githubusercontent.com/29485153/143258552-ae8e7c1f-dfe8-4a32-8734-dbe4b9da70d0.png)
 
-![2021-11-24_23-21-54.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-21-54.png)
+![image](https://user-images.githubusercontent.com/29485153/143258574-e2c3f015-3ba7-4f9e-9838-265ee6e2800f.png)
 
 For the efficiency of preprocessing, fcount(Xi) scans Xi only once. For each seq cut from the beginning, the lexicographical order of seq is obtained through fidx(seq). To avoid counting overlapping seq, it stores the three previous seq in p0,p1, and p2, respectively. If seq is an element of Sseq and not overlapped, store it in the array as an index obtained through fidx(seq).
 
-![2021-11-24_23-22-22.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-22-22.png)
+![image](https://user-images.githubusercontent.com/29485153/143258597-c3570d6c-e20c-44cd-8e8c-4381f358ab16.png)
 
 The entire process of preprocessing is to perform fcount(Xii) for all Xis . [Figure 8] represents the results of the entire preprocessing process when a part of the sample data is provided as an input. This matrix is exported in .csv file format without header. [Figure 9] is an example of result csv.sudo
 
-![2021-11-24_23-22-39.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-22-39.png)
+![image](https://user-images.githubusercontent.com/29485153/143258619-8321023d-b786-4c76-9647-953b74bef7d0.png)
 
-![2021-11-24_23-23-00.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-23-00.png)
+![image](https://user-images.githubusercontent.com/29485153/143258653-90efd99d-e390-4f07-a373-e5bda91ecab2.png)
 
 ### **2.4.2 Encryption of pre-processed data**
 
@@ -132,7 +131,7 @@ The result of section 2.4.1 is mi whose length is 256. Because mi needs to be mu
 
 Finally, these 1000 ciphertexts will be delivered to the next step to compute the logit value.
 
-![2021-11-24_23-23-33.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-23-33.png)
+![image](https://user-images.githubusercontent.com/29485153/143258688-0e99c585-8e6c-4b2e-a442-e2af4fc9b54b.png)
 
 ### **2.4.3 Computing logit value with encrypted inputs**
 
@@ -140,37 +139,37 @@ The 1000 ciphertexts generated in section 2.4.2 are processed in this part. Plea
 
 [Figure 11] shows an example of model vectors w1~ w4. The ‘Feature’ row shows what features’ count values should be multiplied to the model coefficients. Since mi is a vector of 256, we put the coefficient values for each model in the certain positions  of a vector of 256 elements either so that they can be multiplied with the correct count values in mi. This process is shown in [Figure 12].
 
-![2021-11-24_23-24-01.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-24-01.png)
+![image](https://user-images.githubusercontent.com/29485153/143258716-5eca2957-9044-4729-a22b-af41f8803b2f.png)
 
 Because each ciphertext contains 2 mis, we make a model coefficient vector using the model vectors as in [Figure 13]. After converting the coefficient vector into a plaintext polynomial, it is multiplied with each input ciphertext.
 
-![2021-11-24_23-24-19.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-24-19.png)
+![image](https://user-images.githubusercontent.com/29485153/143258748-203431cc-cbc7-4dea-8b07-15b28da5bb9b.png)
 
-![2021-11-24_23-24-33.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-24-33.png)
+![image](https://user-images.githubusercontent.com/29485153/143258769-e10a5602-a989-4b2b-bb96-52f07f75577a.png)
 
 In addition, the number of intercept in the trained logistic regression model is 4, one for each class. If the intercepts for each class are assumed to be {intercept1, intercept2,intercept3, intercept4}, as shown in [Figure 14], since there are two mis in a ciphertext, o we have to make a polynomial including a pair of all intercepts in the following order: {intercept1, intercept2, intercept3, intercept4, intercept1, intercept2, intercept3, intercept4} to process them at once . Also, zero values are put in the slots where the values of the intercepts are not stored. It is added to the result in the next step after left rotations are completed.
 
-![2021-11-24_23-24-50.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-24-50.png)
+![image](https://user-images.githubusercontent.com/29485153/143258807-4e983652-ff9e-4171-942b-4963674c4666.png)
 
 In order to store the logit values in the slot positions of multiples from 0 to 256th index, after multiplication, a set of left rotate operations are performed as in [Figure 15].
 
-![2021-11-24_23-25-16.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-25-16.png)
+![image](https://user-images.githubusercontent.com/29485153/143258834-0c6e8be8-6300-4961-9464-d4eb63e4166f.png)
 
 ### **2.4.4 Obtaining the classification result**
 
 Finally, as shown in [Figure 16], the result of logistic regression is obtained as a result of the previous step. The logit value for class i is in the 256*(i-1)th slot or 1024+256*(i-1)th slot in the ciphertext. Thisprocess is repeated for all every ciphertext from the step in Section 2.4.3.
 
-![2021-11-24_23-25-42.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-25-42.png)
+![image](https://user-images.githubusercontent.com/29485153/143258848-f8158478-f455-498b-b645-255c76554549.png)
 
 As described in the Section 2.3, the values can be transformed into class probabilities with a softmax function. However, the softmax transformation requires a lot of computational costs with encrypted data. Moreover, from the result in an unencrypted state, we checked that the values without executing softmax consistently give almost perfect classification performance over different data splits. So without running the softmax function, the ciphertext is delivered to be decrypted, and after decryption, it is stored in the form of .csv as shown in [Figure 17] for convenience in checking the result. The first line of the output csv file is the name of each class( [B.1.427] [B.1.1.7] [P.1] [B.1.526] ) and after line, the order of result.csv file follows the order of the Xi.
 
-![2021-11-24_23-25-57.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-25-57.png)
+![image](https://user-images.githubusercontent.com/29485153/143258861-cdfc33f5-c165-4bae-9dcf-0a2abc5c9b7f.png)
 
 ## **3 Experimental Result**
 
 We use the open version of the HEaaN library [1], the implementation of CKKS[2] scheme, and the parameters are N=212, log q= 101, log p =45 with (uniformly random) signed binary secret. log qis smaller than 103 which satisfies more than 128-bit security according to [Table 3].
 
-![2021-11-24_23-26-45.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-26-45.png)
+![image](https://user-images.githubusercontent.com/29485153/143258880-3318565c-7d74-4076-ba57-cfa925d5e45b.png)
 
 Our implementation is executed on Ubuntu 20.04 , Intel Xeon Platinum 8259CL CPU @ 2.50GHz processor with 8 threads. In addition, out of 7461 samples from which 539 duplicates were removed from a given Challenge.fa file,70% of them were used for the training data set(70%), and the other 30% were used for the test data set . The detailed results are as follows.
 
@@ -178,23 +177,23 @@ Our implementation is executed on Ubuntu 20.04 , Intel Xeon Platinum 8259CL CPU 
 
 The preprocess stage measurement was carried out using only 1 CPU core. The result is shown in [Figure 18].
 
-![2021-11-24_23-27-28.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-27-28.png)
+![image](https://user-images.githubusercontent.com/29485153/143258902-5871c669-db86-4292-bb62-70717ed5ac6b.png)
 
 To evaluate our model, we used 10-fold cross validation in an encrypted state. The result is shown in [Figure 19].
 
-![2021-11-24_23-27-41.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-27-41.png)
+![image](https://user-images.githubusercontent.com/29485153/143258923-e4a2f16c-3546-4d61-95c9-c35a1f4be93f.png)
 
 The round trip of the encryption process is shown in [Figure 20]. The total memory usage is 1261MB, of which 1072MB is used to keep the ciphertext. The total storage usage is the size of docker.
 
-![2021-11-24_23-27-59.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-27-59.png)
+![image](https://user-images.githubusercontent.com/29485153/143258934-2727a931-e54d-424f-ab07-7eef7ac74db0.png)
 
 As mentioned earlier, our experimental environments Intel Xeon Platinum 8259CL CPU @ 2.50GHz processor with 8 threads. However, the actual testing environment is Intel Xeon Platinum 8180 CPU @ 2.50GHz with 4 cpu cores. As shown in Figure 20, In single core, the Geekbench 4 core score difference between both environments is 9%. In multi-core, the performance gap is increased to 45%.
 
-![2021-11-24_23-28-53.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-28-53.png)
+![image](https://user-images.githubusercontent.com/29485153/143258959-474a1f19-7dda-48fd-b9cd-d62f809b9df5.png)
 
 Considering the difference of the execution environment and the number of samples classified, we expect the running time to classify 2000 samples as shown in [Table 4].
 
-![2021-11-24_23-28-33.png](iDASH_2021%20track%202%20challenge%20code%20cb2eed57612a403c92684f7f0664fa55/2021-11-24_23-28-33.png)
+![image](https://user-images.githubusercontent.com/29485153/143258970-abc47943-281e-4250-a4ef-d8d9f88b29bd.png)
 
 **References**
 
