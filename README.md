@@ -1,3 +1,10 @@
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # iDASH_2021 track 2 challenge code
 
 ![center](https://user-images.githubusercontent.com/29485153/143257581-b26c757b-7914-49e8-8455-8d56600f297a.png)
