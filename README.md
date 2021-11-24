@@ -1,13 +1,6 @@
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
-
 # iDASH_2021 track 2 challenge code
 
-![center](https://user-images.githubusercontent.com/29485153/143257581-b26c757b-7914-49e8-8455-8d56600f297a.png)
+https://www.notion.so/gnadi4/iDASH_2021-track-2-challenge-code-62a42ff6d31a411a8bc8213ddb1d28ee#cb2eed57612a403c92684f7f0664fa55
 
 iDASH 챌린지 소개 페이지 : [http://www.humangenomeprivacy.org/2021/competition-tasks.html](http://www.humangenomeprivacy.org/2021/competition-tasks.html)
 
